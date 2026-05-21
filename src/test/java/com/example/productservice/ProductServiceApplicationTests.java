@@ -2,11 +2,13 @@ package com.example.productservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 /**
  * Integration tests for the Product Service application.
  */
 @SpringBootTest
+@ActiveProfiles("test") // Use the 'test' profile for testing
 class ProductServiceApplicationTests {
 
     /**
