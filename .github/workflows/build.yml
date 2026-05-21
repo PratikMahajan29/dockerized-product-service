@@ -51,7 +51,7 @@ jobs:
       - name: Build Frontend
         run: npm run build
 
-    backend-docker-build:
+  backend-docker-build:
       name: Build Backend Docker Image
       runs-on: ubuntu-latest
 
@@ -62,7 +62,7 @@ jobs:
         - name: Build Backend Docker Image
           run: docker build -t product-service-backend .
 
-    frontend-docker-build:
+  frontend-docker-build:
       name: Build Frontend Docker Image
       runs-on: ubuntu-latest
 
